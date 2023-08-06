@@ -30,4 +30,4 @@ class TestNewFacebook:
       return create_account_element
 
 
-#run_launch_facebook = TestNewFacebook.test_launch_facebook('self')
+#run_launch_facebook = TestNewFacebook.test_launch_facebook('self') added login feature
