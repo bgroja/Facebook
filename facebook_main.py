@@ -30,7 +30,7 @@ def test_Url():
     driver.get("https://www.facebook.com")
     element = TestNewFacebook.test_launch_facebook('self')
     element.click()
-    Validationresult = 'Pass'
+    Validationresult = 'Passed'
     return Validationresult
 
 
