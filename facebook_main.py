@@ -2,7 +2,7 @@ import webbrowser
 from selenium import webdriver
 from selenium.webdriver.common.by import By
 
-import test_facebookc
+import test_facebook
 from test_facebook import TestNewFacebook
 from selenium.webdriver.chrome.service import Service
 from flask import Flask, render_template
@@ -30,6 +30,7 @@ def test_Url():
     driver.get("https://www.facebook.com")
     element = TestNewFacebook.test_launch_facebook('self')
     element.click()
+    driver.get_screenshot_as_file(r'C:\Users\rghattig\PycharmProjects\pythonProject4\.pytest_cache\Screenshot.png')
     Validationresult = 'Passed'
     return Validationresult
 
